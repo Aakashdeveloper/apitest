@@ -21,7 +21,7 @@ app.get('/',function(req,res){
    
 });
 
-//Default Route
+/*//Default Route
 app.get('/city',function(req,res){
     db.collection('attainu').find().toArray(function(err,result){
         if(err) throw err;
@@ -34,6 +34,7 @@ MongoClient.connect(mongoUrl,(err,connection) => {
     if(err) console.log(err);
     db = connection.db('TestDb');
     app.listen(port);
-})
+})*/
 
+app.listen(port);
 
